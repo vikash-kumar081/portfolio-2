@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikash Kumar | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="particles"></div>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <span>Portfolio</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+    <div class="hero-image hidden"
+         style="transition-delay:100ms;">
+        <img src="profile.jpeg"
+             alt="Vikash Kumar"
+             onclick="openImage()">
+    </div>
+
+    <div class="hero-content">
+
+        <h3 class="hidden">
+            Hi, I'm
+        </h3>
+
+        <h1 class="hidden"
+            style="transition-delay:200ms;">
+            <span>Vikash</span> Kumar
+        </h1>
+
+        <h2 class="hidden"
+            style="transition-delay:400ms;">
+            B.Tech Student |
+            Aspiring Software Developer
+        </h2>
+
+        <p class="hidden"
+           style="transition-delay:600ms;">
+            Passionate about software development and creating solutions that make an impact.
+            I enjoy learning new technologies, building projects, and continuously improving
+            my skills through hands-on experience.
+        </p>
+            <p>
+            This portfolio reflects my journey, projects, and dedication to learning,
+            innovation, and professional growth.
+        </p>
+
+        <div class="hero-btns hidden"
+             style="transition-delay:800ms;">
+
+            <a href="#Achievements"
+               class="btn"
+               onclick="openAchievement()">
+                Achievements
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="New cv.jpeg"
+               class="btn-outline"
+               download>
+                <i class="fa-solid fa-download"></i>
+                Download Resume
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- MAIN GRID -->
+<section class="grid-section">
+
+    <!-- ABOUT -->
+    <div class="card" id="about">
+
+        <h2>
+            <i class="fa-regular fa-user"></i>
+            About Me
+        </h2>
+
+        <p>
+        Hello! I'm Vikash Kumar, a second-year B.Tech Computer Science student
+        at Lovely Professional University (LPU).I am passionate about technology
+        and software development. Currently, I am learning HTML, CSS, JavaScript,
+        C, Python, and Data Structures & Algorithms.
+        I enjoy building projects to improve my skills and gain practical experience.
+        Some of my projects include a Weather App, Portfolio Website, and Human
+        Following Robot. My goal is to become a skilled Software Engineer and contribute to 
+        innovative technology solutions.
+        </p>
+
+        <button class="read-btn" onclick="openAbout()">
+            Read More
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card" id="skills">
+
+        <h2>
+            <i class="fa-solid fa-code"></i>
+            Skills
+        </h2>
+
+        <div class="skills-box">
+
+            <span>C</span>
+            <span>C++</span>
+            <span>Python</span>
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+
+            <span>SQL</span>
+            <span>DBMS</span>
+            <span>DSA</span>
+
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+
+        </div>
+
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card" id="projects">
+
+        <h2>
+            <i class="fa-solid fa-briefcase"></i>
+            Projects
+        </h2>
+
+        <div class="project-box">
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>
+                    Personal portfolio website using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <a href="#">
+                    View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>
+                    Real-time weather application
+                    using Weather API.
+                </p>
+
+                <a href="https://vikash-kumar081.github.io/weather-app/" target="_blank">
+                    View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Campus Kart</h3>
+                <p>
+                   Buy, sell, and explore products seamlessly within your college community.
+                </p>
+
+                
+                <a href=" https://vikash-kumar081.github.io/campus-kart/" target="_blank">
+                    View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT POPUP -->
+<div class="about-popup" id="aboutPopup">
+
+    <div class="popup-content">
+
+        <span class="close-btn" onclick="closeAbout()">
+            &times;
+        </span>
+
+        <h2>About Me</h2>
+
+        <p>
+        Beyond academics, I am passionate about coding and continuously improving my technical
+        skills through practical projects and problem-solving. I enjoy learning modern web 
+        technologies, building responsive websites, and exploring software development concepts. 
+        Currently, I am strengthening my knowledge of Data Structures & Algorithms, Object-Oriented
+        Programming, and Full-Stack Development. My goal is to secure valuable internship opportunities,
+        gain real-world experience, and grow into a skilled Software Engineer capable of creating impactful
+        and user-friendly applications.
+        </p>
+
+    </div>
+
+</div>
+<!-- achivement popup -->
+<div class="about-popup" id="achievementPopup">
+
+    <div class="popup-content">
+
+        <span class="close-btn" onclick="closeAchievement()">
+            &times;
+        </span>
+
+        <h2>🏆 Achievements & Certifications</h2>
+        <p>
+             <a href="cirtificate/c++ programming.png" target="_blank">
+                 🏆 C++ Programming Certificate
+             </a>
+        </p>
+        
+        <p>
+            <a href="cirtificate/mock .png" target="_blank">
+                ⏰ Time Management Certificate
+            </a>
+        </p>
+
+        <p>
+            <a href="certificates/c-language.jpg" target="_blank">
+                💻 C Programming Certificate
+            </a>
+        </p>
+         <p>
+            <a href="cirtificate/cyber security.png" target="_blank">
+                🔐 Cyber Security Certificate
+            </a>
+        </p>
+
+    </div>
+
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2>Connect With Me</h2>
+
+    <p>
+📧 Email:
+<a href="mailto:vk0812155@gmail.com">
+vk0812155@gmail.com
+</a>
+</p>
+
+<p>
+💻 GitHub:
+<a href="https://github.com/vikash-kumar081" target="_blank">
+github.com/vikash-kumar081
+</a>
+</p>
+
+<p>
+💼 LinkedIn:
+<a href="https://www.linkedin.com/in/vikash-kumar-716b4a37b" target="_blank">
+linkedin.com/in/vikash-kumar-716b4a37b
+</a>
+</p>
+
+<p>
+📍 Location: Patna, Bihar, India
+</p>
+
+</section>
+
+<footer>
+    © 2026 Vikash Kumar | All Rights Reserved 💚
+</footer>
+<div id="imagePopup" class="image-popup">
+
+    <span class="close-image" onclick="closeImage()">
+        &times;
+    </span>
+
+    <img src="profile.jpeg" class="full-image">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
