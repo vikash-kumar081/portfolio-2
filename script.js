@@ -20,35 +20,31 @@ window.onclick = function (event) {
         popup.style.display = "none";
     }
 };
-
-// ACTIVE NAVBAR LINK
-
-const sections = document.querySelectorAll("section");
+// navLinks
+const sections = document.querySelectorAll("#home, #about, #skills, #projects, #contact");
 const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
 
-    let current = "";
+    let current = "home";
 
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop - 150;
+        const rect = section.getBoundingClientRect();
 
-        if (window.scrollY >= sectionTop) {
-            current = section.getAttribute("id");
+        if (rect.top <= 150 && rect.bottom >= 150) {
+            current = section.id;
         }
     });
 
     navLinks.forEach(link => {
-
         link.classList.remove("active");
 
-        if (link.getAttribute("href").includes(current)) {
+        if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
     });
 });
-
 // SMOOTH FADE ANIMATION
 
 const cards = document.querySelectorAll(".card");
@@ -142,15 +138,6 @@ function openAchievement() {
 function closeAchievement() {
     document.getElementById("achievementPopup").style.display = "none";
 }
-function openAchievement() {
-    document.getElementById("achievementPopup").style.display = "flex";
-}
-
-function closeAchievement() {
-    document.getElementById("achievementPopup").style.display = "none";
-}
-
-/* YAHAN SE NAYA CODE ADD KARO */
 
 const hiddenObserver = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
@@ -164,4 +151,55 @@ const hiddenElements = document.querySelectorAll(".hidden");
 
 hiddenElements.forEach((el)=>{
     hiddenObserver.observe(el);
+});
+const skillBars = document.querySelectorAll(".fill");
+
+const skillObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const bar = entry.target;
+            bar.style.width = bar.dataset.width;
+        }
+
+    });
+
+},{threshold:0.5});
+
+skillBars.forEach(bar=>{
+    skillObserver.observe(bar);
+});
+const percentages = document.querySelectorAll(".percent");
+
+const percentObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            let percent = entry.target;
+            let target = +percent.dataset.target;
+            let count = 0;
+
+            const updateCount = () => {
+
+                if(count < target){
+                    count++;
+                    percent.innerText = count + "%";
+                    setTimeout(updateCount, 20);
+                }
+            };
+
+            updateCount();
+            percentObserver.unobserve(percent);
+        }
+
+    });
+
+},{threshold:0.5});
+
+percentages.forEach(percent=>{
+    percentObserver.observe(percent);
 });
