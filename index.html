@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikash Kumar | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="particles"></div>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <span>Portfolio</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home" >Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+
+    <div class="hero-image hidden"
+         style="transition-delay:100ms;">
+        <img src="profile..jpeg"
+             alt="Vikash Kumar"
+             onclick="openImage()">
+    </div>
+
+    <div class="hero-content">
+
+        <h3 class="hidden">
+            Hi, I'm
+        </h3>
+
+        <h1 class="hidden"
+            style="transition-delay:200ms;">
+            <span>Vikash</span> Kumar
+        </h1>
+
+        <h2 class="hidden"
+            style="transition-delay:400ms;">
+            B.Tech Student |
+            Aspiring Software Developer
+        </h2>
+
+        <p class="hidden"
+           style="transition-delay:600ms;">
+            Passionate about software development and creating solutions that make an impact.
+            I enjoy learning new technologies, building projects, and continuously improving
+            my skills through hands-on experience.
+        </p>
+            <p class="hidden"
+           style="transition-delay:600ms;">
+            This portfolio reflects my journey, projects, and dedication to learning,
+            innovation, and professional growth.
+        </p>
+
+        <div class="hero-btns hidden"
+             style="transition-delay:900ms;">
+
+            <a href="#Achievements"
+               class="btn"
+               onclick="openAchievement()">
+                Achievements
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="cv pel132.png"
+   class="btn-outline"
+   download>
+    <i class="fa-solid fa-download"></i>
+    Download Resume
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- MAIN GRID -->
+<section id="about" class="grid-section">
+
+    <!-- ABOUT -->
+   <div class="card hidden" 
+     style="transition-delay:0.1s;">
+
+        <h2>
+            <i class="fa-regular fa-user"></i>
+            About Me
+        </h2>
+
+   <p class="about-text">
+Hello! I'm Vikash Kumar, a second-year B.Tech Computer Science
+student at Lovely Professional University (LPU).
+
+I enjoy turning ideas into practical solutions and continuously
+challenging myself through hands-on learning and real-world
+projects. I believe in learning by building, improving through
+experience, and staying curious about new technologies.
+
+<br>
+Currently, I am focused on growing as a developer, strengthening
+my problem-solving abilities, and preparing for opportunities
+that help me gain industry experience and create meaningful impact.
+</p>
+
+        <button class="read-btn" onclick="openAbout()">
+            Read More
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+    <!-- SKILLS -->
+<!-- SKILLS -->
+<div class="card hidden skills-card"
+     id="skills"
+     style="transition-delay:0.4s;">
+
+    <h2>
+        <i class="fa-solid fa-code"></i>
+        Skills
+    </h2>
+
+    <div class="skills-box">
+
+        <!-- HTML -->
+        <div class="skill-item">
+            <div class="skill-icon html-icon">
+                <i class="fab fa-html5"></i>
+            </div>
+
+            <div class="skill-info">
+                <h3>HTML</h3>
+            </div>
+
+            <span class="skill-dot"></span>
+        </div>
+
+
+        <!-- CSS -->
+        <div class="skill-item">
+            <div class="skill-icon css-icon">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+
+            <div class="skill-info">
+                <h3>CSS</h3>
+            </div>
+
+            <span class="skill-dot"></span>
+        </div>
+
+
+        <!-- JavaScript -->
+        <div class="skill-item">
+            <div class="skill-icon js-icon">
+                <i class="fab fa-js"></i>
+            </div>
+
+            <div class="skill-info">
+                <h3>JavaScript</h3>
+            </div>
+
+            <span class="skill-dot"></span>
+        </div>
+
+
+        <!-- Python -->
+        <div class="skill-item">
+            <div class="skill-icon python-icon">
+                <i class="fab fa-python"></i>
+            </div>
+
+            <div class="skill-info">
+                <h3>Python</h3>
+            </div>
+
+            <span class="skill-dot"></span>
+        </div>
+
+
+        <!-- C++ -->
+        <div class="skill-item">
+            <div class="skill-icon cpp-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+
+            <div class="skill-info">
+                <h3>C++</h3>
+            </div>
+
+            <span class="skill-dot"></span>
+        </div>
+
+
+        <!-- SQL -->
+        <div class="skill-item">
+            <div class="skill-icon sql-icon">
+                <i class="fas fa-database"></i>
+            </div>
+
+            <div class="skill-info">
+                <h3>SQL</h3>
+            </div>
+
+            <span class="skill-dot"></span>
+        </div>
+
+
+        <!-- Git & GitHub -->
+        <div class="skill-item">
+            <div class="skill-icon github-icon">
+                <i class="fab fa-github"></i>
+            </div>
+
+            <div class="skill-info">
+                <h3>Git & GitHub</h3>
+               
+            </div>
+
+            <span class="skill-dot"></span>
+        </div>
+
+    </div>
+
+</div>
+ <div class="card hidden education-card"
+     id="education"
+     style="transition-delay:0.6s;">
+
+    <h2>
+        <i class="fa-solid fa-graduation-cap"></i>
+        Education
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="year-badge">2025 - Present</span>
+
+                <div class="edu-top">
+
+                    <div>
+                        <h3>B.Tech Computer Science & Engineering</h3>
+                            <p class="college lpu-college">
+                            <i class="fa-solid fa-building-columns"></i>
+                                     Lovely Professional University, Punjab
+                             </p>
+                       
+
+                      <p class="edu-desc">
+    Currently pursuing B.Tech CSE. Learning and exploring new technologies, data structures and problem solving.
+</p>
+                    </div>
+
+                  <img src="logo lpu.jfif"
+     alt="LPU"
+     class="lpu-logo">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fa-solid fa-school"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="year-badge">2022 - 2024</span>
+                <h3>Senior Secondary (Class XII)</h3>
+
+<p class="college">
+    S.D. Public School, Patna
+</p>
+
+<p class="edu-desc">
+    CBSE Board | Science (PCM)
+</p>
+               
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-icon">
+                <i class="fa-solid fa-certificate"></i>
+            </div>
+
+            <div class="timeline-content">
+
+                <span class="year-badge">2020 - 2022</span>
+<h3>Secondary Education (Class X)</h3>
+
+<p class="college">
+    S.D. Public School, Patna
+</p>
+
+<p class="edu-desc">
+    CBSE Board
+</p>
+               
+            </div>
+
+        </div>
+
+    </div>
+
+</div>      
+  
+</section>
+
+<!-- ABOUT POPUP -->
+<div class="about-popup" id="aboutPopup">
+
+    <div class="popup-content">
+
+        <span class="close-btn" onclick="closeAbout()">
+            &times;
+        </span>
+
+        <h2>About Me</h2>
+
+     <p>
+Beyond academics, I strongly believe that learning should
+never stop. I enjoy exploring new ideas, understanding
+different perspectives, and continuously working on my
+personal and professional growth.
+
+I see every challenge as an opportunity to learn something
+new and improve myself. Whether it is learning a new concept,
+working on a project, or solving a difficult problem, I try
+to approach it with patience, dedication, and a positive mindset.
+
+Apart from technical growth, I value discipline, teamwork,
+adaptability, and effective communication. These qualities
+help me work better with others and prepare me for real-world
+professional environments.
+
+In the coming years, I aim to gain industry experience,
+contribute to impactful projects, and grow into a confident
+Software Engineer who can create innovative solutions and
+deliver value to people through technology.
+</p>
+    </div>
+
+</div>
+<!-- achivement popup -->
+<div class="about-popup" id="achievementPopup">
+
+    <div class="popup-content">
+
+        <span class="close-btn" onclick="closeAchievement()">
+            &times;
+        </span>
+
+        <h2>🏆 Achievements & Certifications</h2>
+        <p>
+             <a href="cirtificate/c++ programming.png" target="_blank">
+                 🏆 C++ Programming Certificate
+             </a>
+        </p>
+        
+        <p>
+            <a href="cirtificate/mock .png" target="_blank">
+                ⏰ Time Management Certificate
+            </a>
+        </p>
+
+        <p>
+            <a href="cirtificate/c programming cirtificate.png" target="_blank">
+                💻 C Programming Certificate
+            </a>
+        </p>
+         <p>
+            <a href="cirtificate/cyber security.png" target="_blank">
+                🔐 Cyber Security Certificate
+            </a>
+        </p>
+
+    </div>
+
+</div>
+<!-- ================= PROJECTS SECTION ================= -->
+
+<section id="projects" class="premium-projects">
+
+    <div class="project-header">
+        <h2>
+            <i class="fa-solid fa-code"></i>
+            Projects
+        </h2>
+    </div>
+
+    <div class="premium-grid">
+
+        <!-- WEATHER APP -->
+
+        <div class="premium-card hidden card-1">
+
+            <div class="project-image">
+                <img src="weather app image.png" alt="Weather App">
+            </div>
+
+            <div class="project-info">
+
+                <div class="title-row">
+
+                    <div class="title-left">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                        </div>
+
+                        <h3>Weather App</h3>
+
+                    </div>
+
+                </div>
+
+     <p>
+Built a real-time weather application using API integration.
+Provides live forecasts with a clean and responsive UI.
+Focused on delivering accurate data and smooth user experience.
+</p>
+                <div class="tech-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>API</span>
+                </div>
+<div class="project-actions">
+
+    <a href="https://vikash-kumar081.github.io/weather-app/"
+       target="_blank"
+       class="view-btn">
+        Live Demo
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <a href="https://github.com/vikash-kumar081/weather-app"
+       target="_blank"
+       class="github-btn">
+        <i class="fab fa-github"></i>
+    </a>
+
+</div>
+
+            </div>
+
+        </div>
+
+        <!-- CAMPUSKART -->
+
+        <div class="premium-card hidden card-2">
+
+            <div class="project-image">
+                <img src="campus cart thumbnal 3.jpeg" alt="CampusKart">
+            </div>
+
+            <div class="project-info">
+
+                <div class="title-row">
+
+                    <div class="title-left">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                        <h3>CampusKart</h3>
+
+                    </div>
+                </div>
+
+              <p>
+Full-stack student marketplace platform with product listing,
+image uploads, admin approval system, user authentication,
+and cloud database integration.
+</p>
+            <div class="tech-tags">
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+    <span>Node.js</span>
+    <span>Express.js</span>
+    <span>MySQL</span>
+    <span>REST API</span>
+   
+</div>
+
+               <div class="project-actions">
+
+    <a href="https://campuskart2.onrender.com?utm_source=chatgpt.com"
+       target="_blank"
+       class="view-btn">
+
+        Live Demo
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+    </a>
+
+    <a href="https://github.com/vikash-kumar081/CampusKart2.git"
+       target="_blank"
+       class="github-btn">
+
+        <i class="fab fa-github"></i>
+
+    </a>
+
+</div>
+
+            </div>
+
+        </div>
+
+        <!-- PORTFOLIO -->
+
+        <div class="premium-card hidden card-3">
+
+            <div class="project-image">
+                <img src="portfolio website.jpeg"
+                     alt="Portfolio">
+            </div>
+
+            <div class="project-info">
+
+                <div class="title-row">
+
+                    <div class="title-left">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <h3>Portfolio Website</h3>
+
+                    </div>
+
+
+                </div>
+<p>
+Designed and developed a modern personal portfolio website.
+Highlights technical skills, projects, and achievements effectively.
+Built to create a strong professional presence for recruiters.
+</p>
+
+                <div class="tech-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+<div class="project-actions">
+
+    <a href="https://vikash-kumar081.github.io/portfolio/"
+       target="_blank"
+       class="view-btn">
+        Live Demo
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <a href="https://github.com/vikash-kumar081/portfolio"
+       target="_blank"
+       class="github-btn">
+        <i class="fab fa-github"></i>
+    </a>
+
+</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="hidden">
+
+    <div class="contact-heading">
+        <span>••• CONTACT</span>
+        <h2>Let's Build <span>Something Great</span></h2>
+        <p>
+            Have a project in mind or a question?
+            Drop me a message, I reply fast.
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+           <a href="mailto:vk0812155@gmail.com"
+                class="contact-card hidden"
+            style="transition-delay:0.1s;">
+                <div>
+                    <h3>Email</h3>
+                    <p>vk0812155@gmail.com</p>
+                </div>
+                <span>→</span>
+            </a>
+
+           <a href="https://github.com/vikash-kumar081"
+                target="_blank"
+                class="contact-card hidden"
+                    style="transition-delay:0.3s;">
+
+                <div>
+                    <h3>GitHub</h3>
+                    <p>vikash-kumar081</p>
+                </div>
+
+                <span>→</span>
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/vikash-kumar-716b4a37b"
+                target="_blank"
+                class="contact-card hidden"
+                    style="transition-delay:0.5s;">
+
+                <i class="fab fa-linkedin"></i>
+
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Vikash Kumar</p>
+                </div>
+
+                <span>→</span>
+
+            </a>
+
+         <div class="contact-card hidden"
+            style="transition-delay:0.7s;">
+
+                <i class="fas fa-location-dot"></i>
+
+                <div>
+                    <h3>Location</h3>
+                    <p>Patna, Bihar, India</p>
+                </div>
+
+            </div>
+
+        </div>
+
+<form class="contact-form hidden"
+      style="transition-delay:0.9s;"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <input type="hidden"
+           name="access_key"
+           value="c5e62e09-566a-462c-a292-d1e8403ce820">
+
+    <input type="hidden"
+           name="subject"
+           value="New Portfolio Message">
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required>
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email Address"
+        autocomplete="email"
+        required>
+
+    <input
+        type="text"
+        name="subject_line"
+        placeholder="Subject">
+
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        required></textarea>
+
+    <button type="submit">
+        Send Message 🚀
+    </button>
+
+</form>
+    <!-- </div> -->
+
+</section>
+<footer>
+    © 2026 Vikash Kumar | All Rights Reserved 💚
+</footer>
+<div id="imagePopup" class="image-popup">
+
+    <span class="close-image" onclick="closeImage()">
+        &times;
+    </span>
+
+    <img src="profile.jpeg" class="full-image">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
